@@ -1,0 +1,320 @@
+/* ============================================
+   ESTILOS BASE PARA TODOS LOS TESTS PSICOLÓGICOS AGESO
+   Versión: 1.0
+   
+   INSTRUCCIONES DE USO:
+   1. Incluir este archivo en todos los tests: <link rel="stylesheet" href="estilos_base.css">
+   2. Si necesitas estilos de tabla, incluir también: <link rel="stylesheet" href="estilos_tabla.css">
+   3. Nunca modificar este archivo directamente, crear un CSS adicional si necesitas personalización
+   ============================================ */
+
+/* ============================================
+   CONFIGURACIÓN DE PÁGINA PARA IMPRESIÓN
+   ============================================ */
+@page {
+    size: letter; /* Tamaño carta estándar */
+    margin: 0.8cm; /* Márgenes de la página */
+}
+
+/* ============================================
+   VARIABLES CSS GLOBALES - MODIFICAR AQUÍ
+   ============================================ */
+:root {
+    /* Colores principales */
+    --color-primario: #006837; /* Verde AGESO */
+    --color-secundario: #7fc7af; /* Verde claro */
+    --color-borde: #000000;
+    --color-fondo-seccion: #e8f5e9;
+    --color-fondo-tabla: #f8f9fa;
+    --color-texto: #333333;
+    
+    /* Tamaños de burbujas/casillas - MODIFICAR AQUÍ PARA CAMBIAR TODAS */
+    --tamano-burbuja: 18px; /* Aumentar si OCR no detecta bien */
+    --grosor-borde-burbuja: 2.5px;
+    
+    /* Espaciados */
+    --espacio-entre-opciones: 8px;
+    --espacio-entre-preguntas: 6px;
+    
+    /* Tamaños de fuente */
+    --fuente-titulo: 28px;
+    --fuente-subtitulo: 13px;
+    --fuente-pregunta: 11px;
+    --fuente-info: 11px;
+    --fuente-nota: 9px;
+}
+
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    padding: 15px;
+    max-width: 21.59cm; /* Ancho carta */
+    margin: 0 auto;
+    color: var(--color-texto);
+}
+
+/* ============================================
+   ENCABEZADO ESTÁNDAR
+   Incluye: Logo AGESO + Título + Código QR
+   ============================================ */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--color-primario);
+}
+
+/* Logo AGESO a la izquierda */
+.area-logo {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-ageso {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.codigo-referencia {
+    font-size: var(--fuente-nota);
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+/* Título central */
+.titulo-principal {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.titulo-principal h1 {
+    font-size: var(--fuente-titulo);
+    font-weight: bold;
+    color: var(--color-primario);
+    margin-bottom: 3px;
+}
+
+.titulo-principal h2 {
+    font-size: var(--fuente-subtitulo);
+    font-weight: normal;
+    color: var(--color-texto);
+}
+
+/* Área de código QR/Barras a la derecha */
+.area-codigo {
+    flex: 0 0 116px;
+    border: 2px dashed #999;
+    padding: 10px;
+    text-align: center;
+    background: #fafafa;
+    border-radius: 4px;
+}
+
+.area-codigo strong {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 8px;
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.espacio-sticker {
+    height: 60px;
+    min-width: 60px;
+    background: white;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fuente-nota);
+    color: #aaa;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+/* ============================================
+   SECCIÓN DE INFORMACIÓN DEL PACIENTE
+   ============================================ */
+.seccion-informacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: var(--fuente-info);
+}
+
+.campo-info {
+    display: flex;
+    align-items: center;
+}
+
+.campo-info label {
+    font-weight: bold;
+    margin-right: 6px;
+    white-space: nowrap;
+}
+
+.campo-info input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 2px 4px;
+    font-size: var(--fuente-info);
+    background: transparent;
+}
+
+/* Campo que ocupa toda la fila */
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+/* ============================================
+   GUÍA DE MARCADO
+   ============================================ */
+.guia-marcado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid var(--color-primario);
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.ejemplo-marca {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Marca correcta (círculo relleno) */
+.marca-correcta {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background: #000;
+}
+
+/* Marca incorrecta (X) */
+.marca-incorrecta {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+}
+
+.marca-incorrecta::before,
+.marca-incorrecta::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #000;
+    top: -2px;
+    left: 7px;
+}
+
+.marca-incorrecta::before {
+    transform: rotate(45deg);
+}
+
+.marca-incorrecta::after {
+    transform: rotate(-45deg);
+}
+
+/* ============================================
+   INSTRUCCIONES
+   ============================================ */
+.instrucciones {
+    background: none;
+    padding: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid var(--color-primario);
+    border-radius: 4px;
+    color: var(--color-primario);
+    line-height: 1.5;
+}
+
+/* ============================================
+   BURBUJAS DE RESPUESTA
+   ============================================ */
+.burbuja {
+    width: var(--tamano-burbuja);
+    height: var(--tamano-burbuja);
+    border: var(--grosor-borde-burbuja) solid var(--color-borde);
+    border-radius: 50%;
+    display: inline-block;
+    background: white;
+    vertical-align: middle;
+}
+
+/* Casilla cuadrada (alternativa a burbuja) */
+.casilla {
+    width: var(--tamano-burbuja);
+    height: var(--tamano-burbuja);
+    border: var(--grosor-borde-burbuja) solid var(--color-borde);
+    display: inline-block;
+    background: white;
+    vertical-align: middle;
+}
+
+/* ============================================
+   PIE DE PÁGINA
+   ============================================ */
+.pie-pagina {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 8px;
+    background: var(--color-fondo-seccion);
+    border: 2px solid var(--color-primario);
+    border-radius: 4px;
+    color: var(--color-primario);
+}
+
+/* Nota OCR al final */
+.nota-ocr {
+    margin-top: 10px;
+    font-size: var(--fuente-nota);
+    color: #666;
+    text-align: center;
+    font-style: italic;
+}
+
+/* ============================================
+   ESTILOS PARA IMPRESIÓN
+   ============================================ */
+@media print {
+    body {
+        padding: 0;
+    }
+    
+    .area-codigo-barras {
+        page-break-inside: avoid;
+    }
+}

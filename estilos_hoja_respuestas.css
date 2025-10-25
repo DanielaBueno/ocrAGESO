@@ -1,0 +1,213 @@
+/* ============================================
+   ESTILOS PARA HOJA DE RESPUESTAS TIPO 16PF
+   Versión: 1.0
+   
+   Para hojas de respuestas de alta densidad:
+   - Múltiples columnas (4-6 columnas)
+   - Muchas preguntas (100-200+)
+   - Formato compacto para una sola página
+   - Opciones A/B/C por pregunta
+   
+   INSTRUCCIONES DE USO:
+   1. Incluir DESPUÉS de estilos_base.css
+   2. Optimizado para lectura OCR
+   3. Diseñado para caber en una página carta
+   ============================================ */
+
+/* ============================================
+   CONTENEDOR PRINCIPAL DE COLUMNAS
+   ============================================ */
+.hoja-respuestas-compacta {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 9px;
+}
+
+/* Para 4 columnas (tests más cortos) */
+.columnas-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Para 5 columnas */
+.columnas-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* ============================================
+   CADA COLUMNA DE PREGUNTAS
+   ============================================ */
+.columna-preguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* ============================================
+   ENCABEZADO DE COLUMNA
+   ============================================ */
+.encabezado-columna {
+    background: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 2px;
+}
+
+/* ============================================
+   CADA ÍTEM DE PREGUNTA
+   ============================================ */
+.item-pregunta {
+    display: grid;
+    grid-template-columns: 25px 1fr 1fr 1fr;
+    align-items: center;
+    padding: 3px 2px;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 4px;
+}
+
+/* Alternar fondos para mejor lectura */
+.item-pregunta:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Número de pregunta */
+.numero-item {
+    font-weight: bold;
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 9px;
+}
+
+/* Celdas de opciones A, B, C */
+.opcion-celda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: 8px;
+}
+
+.opcion-letra {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Burbuja en formato compacto */
+.burbuja-compacta {
+    width: var(--tamano-burbuja);
+    height: var(--tamano-burbuja);
+    border: var(--grosor-borde-burbuja) solid var(--color-borde);
+    border-radius: 50%;
+    display: inline-block;
+    background: white;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   SECCIÓN DE IDENTIFICACIÓN COMPACTA
+   ============================================ */
+.identificacion-compacta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-bottom: 8px;
+    font-size: 9px;
+    padding: 8px;
+    background: #f8f9fa;
+    border: 2px solid var(--color-primario);
+    border-radius: 4px;
+}
+
+.campo-compacto {
+    display: flex;
+    align-items: center;
+}
+
+.campo-compacto label {
+    font-weight: bold;
+    margin-right: 4px;
+    white-space: nowrap;
+    font-size: 9px;
+}
+
+.campo-compacto input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 1px 3px;
+    font-size: 9px;
+    background: transparent;
+}
+
+/* ============================================
+   INSTRUCCIONES COMPACTAS
+   ============================================ */
+.instrucciones-compactas {
+    background: white;
+    padding: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 8px;
+    font-weight: bold;
+    border: 2px solid var(--color-primario);
+    border-radius: 3px;
+    color: var(--color-primario);
+    line-height: 1.3;
+}
+
+/* ============================================
+   ESTILOS PARA IMPRESIÓN
+   ============================================ */
+@media print {
+    .hoja-respuestas-compacta {
+        page-break-inside: avoid;
+    }
+    
+    .item-pregunta:nth-child(even) {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .columna-preguntas {
+        page-break-inside: avoid;
+    }
+    
+    body {
+        padding: 5px;
+    }
+}
+
+/* ============================================
+   AJUSTES PARA ALTA DENSIDAD
+   ============================================ */
+
+/* Reducir espacios en modo compacto extremo */
+.modo-ultra-compacto .item-pregunta {
+    padding: 2px 1px;
+    gap: 2px;
+}
+
+.modo-ultra-compacto .hoja-respuestas-compacta {
+    gap: 5px;
+}
+
+.modo-ultra-compacto .numero-item {
+    font-size: 8px;
+}
+
+/* ============================================
+   VARIANTE: LAYOUT HORIZONTAL
+   Para tests con pocas opciones pero muchas preguntas
+   ============================================ */
+.layout-horizontal .item-pregunta {
+    grid-template-columns: 30px repeat(3, 1fr);
+}
+
+.layout-horizontal .opcion-celda {
+    flex-direction: column;
+    gap: 2px;
+}

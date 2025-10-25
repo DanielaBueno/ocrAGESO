@@ -1,0 +1,121 @@
+/* ============================================
+   ESTILOS PARA TABLAS DE PREGUNTAS
+   Versión: 1.0
+   
+   INSTRUCCIONES DE USO:
+   1. Este archivo debe usarse junto con estilos_base.css
+   2. Incluir después de estilos_base.css en el HTML
+   3. Proporciona estilos para tests con formato de tabla
+   ============================================ */
+
+/* ============================================
+   TABLA DE PREGUNTAS - ESTRUCTURA BÁSICA
+   ============================================ */
+.tabla-preguntas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: var(--fuente-pregunta);
+}
+
+/* ============================================
+   ENCABEZADO DE TABLA
+   ============================================ */
+.tabla-preguntas thead,
+.tabla-preguntas thead .col-numero {
+    background: var(--color-primario);
+    color: white;
+}
+
+.tabla-preguntas th {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    border: 1px solid var(--color-primario);
+}
+
+/* ============================================
+   CELDAS DE TABLA
+   ============================================ */
+.tabla-preguntas td {
+    padding: 8px;
+    border: 1px solid #999;
+    vertical-align: middle;
+}
+
+/* Filas alternadas para mejor lectura */
+.tabla-preguntas tbody tr:nth-child(even) {
+    background: var(--color-fondo-tabla);
+}
+
+/* Efecto hover para resaltar fila */
+.tabla-preguntas tbody tr:hover {
+    background: #e8f5e9;
+}
+
+/* ============================================
+   COLUMNAS ESPECÍFICAS
+   ============================================ */
+
+/* Columna de número de pregunta */
+.col-numero {
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
+/* Columna de texto de ítem/pregunta */
+.col-item {
+    text-align: left;
+    padding: 10px;
+}
+
+/* Columnas de respuesta (burbujas/casillas) */
+.col-respuesta {
+    width: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Para tests con más opciones (7+ opciones) */
+.col-respuesta-compacta {
+    width: 35px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ============================================
+   VARIACIONES DE TABLA
+   ============================================ */
+
+/* Tabla compacta (para muchas preguntas) */
+.tabla-compacta td {
+    padding: 6px;
+    font-size: 10px;
+}
+
+/* Tabla expandida (para preguntas largas) */
+.tabla-expandida td {
+    padding: 12px;
+    line-height: 1.5;
+}
+
+/* ============================================
+   ESTILOS PARA IMPRESIÓN
+   ============================================ */
+@media print {
+    .tabla-preguntas tbody tr:nth-child(even) {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .tabla-preguntas {
+        page-break-inside: auto;
+    }
+    
+    .tabla-preguntas tr {
+        page-break-inside: avoid;
+    }
+}
