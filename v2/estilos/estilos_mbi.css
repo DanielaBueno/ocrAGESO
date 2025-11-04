@@ -1,0 +1,173 @@
+/* ============================================
+   ESTILOS BASE PARA TODOS LOS TESTS PSICOLÓGICOS AGESO
+   Versión: 1.0
+   
+   INSTRUCCIONES DE USO:
+   1. Incluir este archivo en todos los tests: <link rel="stylesheet" href="estilos_base.css">
+   2. Si necesitas estilos de tabla, incluir también: <link rel="stylesheet" href="estilos_tabla.css">
+   3. Nunca modificar este archivo directamente, crear un CSS adicional si necesitas personalización
+   ============================================ */
+
+/* ============================================
+   CONFIGURACIÓN DE PÁGINA PARA IMPRESIÓN
+   ============================================ */
+@page {
+    size: letter; /* Tamaño carta estándar */
+    margin: 0.8cm; /* Márgenes de la página */
+}
+/* ============================================
+   Nota PARA IMPRESIÓN
+   ============================================ */
+/* superior 0.27in
+inferior 0in
+izquierda 0.31in
+derecha 0.34in */
+
+/* ============================================
+   VARIABLES CSS GLOBALES - MODIFICAR AQUÍ
+   ============================================ */
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+
+
+/* ============================================
+   ENCABEZADO ESTÁNDAR
+   Incluye: Logo AGESO + Título + Código QR
+   ============================================ */
+.encabezado {
+    margin-bottom: 3px;
+}
+
+/* ============================================
+   SECCIÓN DE INFORMACIÓN DEL PACIENTE
+   ============================================ */
+.seccion-informacion {
+    margin-bottom: 5px;
+    font-size: var(--fuente-info);
+}
+
+.campo-info input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 2px 4px;
+    font-size: var(--fuente-info);
+    background: transparent;
+}
+
+
+/* ============================================
+   GUÍA DE MARCADO
+   ============================================ */
+.seccion-informacion,
+.guia-marcado,
+.instrucciones,
+.pie-pagina {
+    padding: 5px 0px;
+    margin: 3px 0px;
+}
+/* ============================================
+   INSTRUCCIONES
+   ============================================ */
+.instrucciones h3 {
+    font-size: 10px;
+}
+
+.instrucciones p {
+    font-size: 9px;
+}
+
+.instrucciones h3,
+.instrucciones p {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* ========================================
+ESCALA DE MEDICIÓN (INLINE)
+======================================== */
+.escala-inline {
+    padding: 0px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 9px;
+    gap: 5px;
+    border: 1px solid #ccc;
+}
+
+.escala-inline span {
+    padding: 4px 8px;
+}
+
+.escala-inline span strong {
+    margin-right: 4px;
+    font-size: 7px;
+}
+
+ /* ============================================
+   TABLA DE PREGUNTAS - ESTRUCTURA BÁSICA
+   ============================================ */
+.tabla-preguntas {
+    margin: 5px 0px;
+}
+/* ============================================
+   ENCABEZADO DE TABLA
+   ============================================ */
+
+.tabla-preguntas th {
+    padding: 5px;
+    font-size: 11px;
+}
+
+/* ============================================
+   CELDAS DE TABLA
+   ============================================ */
+.tabla-preguntas td {
+    padding: 5px;
+}
+
+/* ============================================
+   COLUMNAS ESPECÍFICAS
+   ============================================ */
+
+/* Columna de texto de ítem/pregunta */
+.col-item {
+    padding: 5px;
+}
+
+/* Columnas de respuesta (burbujas/casillas) */
+.col-respuesta {
+    width: 35px;
+}
+/* ============================================
+   VARIACIONES DE TABLA
+   ============================================ */
+
+/* Tabla compacta (para muchas preguntas) */
+.tabla-compacta td {
+    padding: 6px;
+    font-size: 10px;
+}
+
+/* ============================================
+   BURBUJAS DE RESPUESTA
+   ============================================ */
+
+/* ============================================
+   PIE DE PÁGINA
+   ============================================ */
+.pie-pagina {
+    font-size: 9px;
+}
+
+/* Nota OCR al final */
+.nota-ocr {
+    margin-top: 5px;
+}
+
+/* ============================================
+   ESTILOS PARA IMPRESIÓN
+   ============================================ */

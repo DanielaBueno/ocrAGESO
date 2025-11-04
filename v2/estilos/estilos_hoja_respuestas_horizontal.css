@@ -1,0 +1,257 @@
+/* ============================================
+   ESTILOS PARA HOJA DE RESPUESTAS TIPO 16PF
+   Versión: 2.0 - Formato Horizontal Integrado
+   
+   Para hojas de respuestas de alta densidad:
+   - Múltiples columnas horizontales (9 columnas)
+   - Muchas preguntas (100-200+)
+   - Formato compacto landscape para una sola página
+   - Opciones A/B/C por pregunta
+   - Optimizado para lectura OCR
+   ============================================ */
+
+/* ============================================
+   CONFIGURACIÓN DE PÁGINA
+   ============================================ */
+@page {
+	size: letter landscape;
+	margin: 0.5cm;
+}
+
+body {
+	max-width: 27.94cm;
+	padding: 10px;
+}
+
+/* ============================================
+   ENCABEZADO
+   ============================================ */
+.encabezado {
+	margin-bottom: 8px;
+	padding-bottom: 6px;
+}
+
+/* ============================================
+   SECCIÓN DE IDENTIFICACIÓN COMPACTA
+   ============================================ */
+.identificacion-compacta {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 4px;
+	padding: 6px;
+	margin-bottom: 6px;
+	font-size: 8px;
+	background: #f8f9fa;
+	border: 2px solid var(--color-primario);
+	border-radius: 4px;
+}
+
+.campo-compacto {
+	display: flex;
+	align-items: center;
+}
+
+.campo-compacto label {
+	font-weight: bold;
+	margin-right: 4px;
+	white-space: nowrap;
+	font-size: 8px;
+}
+
+.campo-compacto input {
+	flex: 1;
+	border: none;
+	border-bottom: 1px solid #333;
+	padding: 1px 3px;
+	font-size: 8px;
+	background: transparent;
+}
+
+.campo-completo {
+	font-size: 8px;
+}
+
+/* ============================================
+   INSTRUCCIONES COMPACTAS
+   ============================================ */
+.instrucciones-compactas {
+	background: white;
+	padding: 4px;
+	margin-bottom: 6px;
+	text-align: center;
+	font-size: 7px;
+	font-weight: bold;
+	border: 2px solid var(--color-primario);
+	border-radius: 3px;
+	color: var(--color-primario);
+	line-height: 1.3;
+}
+
+/* ============================================
+   GUÍA DE MARCADO
+   ============================================ */
+.guia-marcado {
+	font-size: 8px;
+	padding: 5px;
+	margin: 3px;
+}
+
+/* ============================================
+   CONTENEDOR PRINCIPAL - LAYOUT HORIZONTAL
+   ============================================ */
+.hoja-respuestas-horizontal {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	gap: 6px;
+	margin-bottom: 8px;
+	font-size: 9px;
+}
+
+/* Variantes de columnas alternativas */
+.columnas-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.columnas-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.columnas-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+/* ============================================
+   CADA COLUMNA DE PREGUNTAS
+   ============================================ */
+.columna-preguntas {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+/* ============================================
+   ENCABEZADO DE COLUMNA
+   ============================================ */
+.encabezado-columna {
+	background: var(--color-primario);
+	color: white;
+	text-align: center;
+	padding: 3px;
+	font-weight: bold;
+	font-size: 9px;
+	border-radius: 2px;
+}
+
+/* ============================================
+   CADA ÍTEM DE PREGUNTA
+   ============================================ */
+.item-pregunta {
+	display: grid;
+	grid-template-columns: 25px 1fr 1fr 1fr;
+	align-items: center;
+	padding: 2px 1px;
+	border-bottom: 1px solid #e0e0e0;
+	gap: 3px;
+}
+
+/* Alternar fondos para mejor lectura */
+.item-pregunta:nth-child(even) {
+	background: #f8f9fa;
+}
+
+/* Número de pregunta */
+.numero-item {
+	font-weight: bold;
+	color: var(--color-primario);
+	text-align: center;
+	font-size: 8px;
+}
+
+/* Celdas de opciones A, B, C */
+.opcion-celda {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	font-size: 7px;
+}
+
+.opcion-letra {
+	font-weight: bold;
+	color: #333;
+}
+
+/* Burbuja en formato compacto */
+.burbuja-compacta {
+	width: var(--tamano-burbuja);
+	height: var(--tamano-burbuja);
+	border: var(--grosor-borde-burbuja) solid var(--color-borde);
+	border-radius: 50%;
+	display: inline-block;
+	background: white;
+	flex-shrink: 0;
+}
+
+/* ============================================
+   PIE DE PÁGINA
+   ============================================ */
+.pie-pagina {
+	padding: 4px;
+	font-size: 8px;
+	margin-top: 6px;
+}
+
+.nota-ocr {
+	font-size: 7px;
+	margin-top: 6px;
+}
+
+/* ============================================
+   MODO ULTRA COMPACTO
+   ============================================ */
+.modo-ultra-compacto .item-pregunta {
+	padding: 1px;
+	gap: 2px;
+}
+
+.modo-ultra-compacto .hoja-respuestas-horizontal {
+	gap: 4px;
+}
+
+.modo-ultra-compacto .numero-item {
+	font-size: 7px;
+}
+
+/* ============================================
+   VARIANTE: LAYOUT HORIZONTAL EXPANDIDO
+   ============================================ */
+.layout-horizontal .item-pregunta {
+	grid-template-columns: 30px repeat(3, 1fr);
+}
+
+.layout-horizontal .opcion-celda {
+	flex-direction: column;
+	gap: 2px;
+}
+
+/* ============================================
+   ESTILOS PARA IMPRESIÓN
+   ============================================ */
+@media print {
+	body {
+		padding: 5px;
+	}
+
+	.hoja-respuestas-horizontal {
+		page-break-inside: avoid;
+	}
+
+	.item-pregunta:nth-child(even) {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+
+	.columna-preguntas {
+		page-break-inside: avoid;
+	}
+}
