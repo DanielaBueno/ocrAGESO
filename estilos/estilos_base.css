@@ -246,8 +246,8 @@ body {
 /* ============================================
    INSTRUCCIONES
    ============================================ */
-.instrucciones {
-    background: none;
+.instruccioness {
+    background: #e8f4f8;
     padding: 10px;
     margin-bottom: 12px;
     text-align: center;
@@ -257,6 +257,63 @@ body {
     border-radius: 4px;
     color: var(--color-primario);
     line-height: 1.5;
+}
+/* ============================================
+INSTRUCCIONES
+============================================ */
+.instrucciones {
+    background: #e8f4f8;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 2px solid #1a7a3e;
+    text-align: left;
+}
+
+.instrucciones h3 {
+    color: #1a7a3e;
+    font-size: 12px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.instrucciones p {
+    color: #444;
+    font-size: 10px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* ========================================
+ESCALA DE MEDICIÓN (INLINE)
+======================================== */
+.escala-inline {
+    background: white;
+    padding: 8px 8px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.escala-inline span {
+    background: #f5f5f5;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1.5px solid #666;
+    white-space: nowrap;
+    color: #333;
+}
+
+.escala-inline span strong {
+    color: #000;
+    font-weight: 700;
+    margin-right: 1px;
+    font-size: 11px;
 }
 
 /* ============================================
@@ -304,6 +361,49 @@ body {
     color: #666;
     text-align: center;
     font-style: italic;
+}
+
+/* <!-- ====================================================================
+    ÁREA DE FIRMAS
+==================================================================== --> */
+.area-firmas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 150px;
+    padding: 0px 15px;
+}
+
+.firma-box {
+    text-align: center;
+}
+
+.firma-box label {
+    display: block;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 0px;
+    color: var(--color-primario);
+}
+
+.linea-firma {
+    border-top: 2px solid #333;
+    padding-top: 0px;
+}
+
+.firma-box .info-firma {
+    font-size: 9px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.caja {
+    width: 400px;              /* ancho */
+    height: 150px;             /* alto */
+    background-color: none; /* color de fondo */
+    border: 2px solid var(--color-primario);    /* borde */
+    border-radius: 10px;       /* esquinas redondeadas */
+    margin: 20px auto;         /* espacio externo y centrado */
 }
 
 /* ============================================
