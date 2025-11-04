@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test Maslach Burnout Inventory (MBI) - AGESO</title>
+
+		<!-- ===== HOJAS DE ESTILO DEL SISTEMA MODULAR ===== -->
+		<link rel="stylesheet" href="estilos/estilos_base.css" />
+		<link rel="stylesheet" href="estilos/estilos_tabla.css" />
+		<link rel="stylesheet" href="estilos/estilos_mbi.css" />
+	</head>
+	<body>
+		<!-- ====================================================================
+         ENCABEZADO ESTÁNDAR
+         ==================================================================== -->
+		<header class="encabezado">
+			<div class="area-logo">
+				<img class="logo-ageso" src="logo_ageso.png" alt="Logo AGESO" />
+			</div>
+
+			<div class="titulo-principal">
+				<h1>MBI</h1>
+				<h2>Maslach Burnout Inventory - Test de Estrés Laboral</h2>
+			</div>
+
+			<div class="area-codigo">
+				<strong>PEGAR CÓDIGO QR AQUÍ</strong>
+				<div class="espacio-sticker">Código QR</div>
+			</div>
+		</header>
+		<main>
+        <!-- ====================================================================
+         INFORMACIÓN DEL EVALUADO
+        ==================================================================== -->
+			<section class="seccion-informacion">
+				<article class="campo-info campo-completo">
+					<label>Nombre(s) y Apellido(s):</label>
+					<input type="text" />
+					<div class="campo-info">
+						<label>CC:</label>
+						<input type="text" />
+					</div>
+					<div class="campo-info">
+						<label>Fecha:</label>
+						<input type="text" />
+					</div>
+				</article>
+			</section>
+
+			<!-- ====================================================================
+         GUÍA DE MARCADO
+         ==================================================================== -->
+			<aside class="guia-marcado">
+				<div class="ejemplo-marca">
+					<span>✓ CORRECTO:</span>
+					<div class="marca-correcta"></div>
+				</div>
+				<div class="ejemplo-marca">
+					<span>✗ INCORRECTO:</span>
+					<div class="marca-incorrecta"></div>
+				</div>
+				<div class="ejemplo-marca">
+					<span>🖊 Use lápiz o bolígrafo NEGRO</span>
+				</div>
+			</aside>
+
+			<!-- ====================================================================
+         INSTRUCCIONES
+         ==================================================================== -->
+			<section class="instrucciones">
+				<h3>INSTRUCCIONES</h3>
+				<p>
+					A continuación se presentan una serie de afirmaciones (22). Usted
+					deberá responder frente a cada una, señalando en la columna del número
+					que crea oportuno, de acuerdo a la frecuencia y en función de la
+					siguiente escala de medición:
+				</p>
+
+				<!-- Escala en formato inline -->
+				<article class="escala-inline">
+					<span><strong>0.</strong> Nunca</span>
+					<span><strong>1.</strong> Pocas veces al año o menos</span>
+					<span><strong>2.</strong> Una vez al mes o menos</span>
+					<span><strong>3.</strong> Unas pocas veces al mes o menos</span>
+					<span><strong>4.</strong> Una vez a la semana</span>
+					<span><strong>5.</strong> Pocas veces a la semana</span>
+					<span><strong>6.</strong> Todos los días</span>
+				</article>
+			</section>
+
+			<!-- ====================================================================
+         TABLA DE PREGUNTAS
+         ==================================================================== -->
+			<table class="tabla-preguntas">
+				<thead>
+					<tr>
+						<th>No.</th>
+						<th>ÍTEM</th>
+						<th>0</th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+						<th>5</th>
+						<th>6</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="col-numero">1</td>
+						<td class="col-item">
+							Me siento emocionalmente agotado por mi trabajo.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">2</td>
+						<td class="col-item">
+							Me siento cansado al final de la jornada de trabajo.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">3</td>
+						<td class="col-item">
+							Me siento fatigado cuando me levanto por la mañana y tengo que ir
+							a trabajar.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">4</td>
+						<td class="col-item">
+							Comprendo fácilmente como se sienten los usuarios/clientes.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">5</td>
+						<td class="col-item">
+							Trato a algunos usuarios/clientes como si fueran objetos
+							impersonales.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">6</td>
+						<td class="col-item">
+							Trabajar todo el día con mucha gente es un esfuerzo.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">7</td>
+						<td class="col-item">
+							Trato muy eficazmente los problemas de los usuarios/clientes.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">8</td>
+						<td class="col-item">Me siento "quemado" por mi trabajo.</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">9</td>
+						<td class="col-item">
+							Creo que influyo positivamente con mi trabajo en la vida de las
+							personas.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">10</td>
+						<td class="col-item">
+							Me he vuelto más insensible con la gente desde que ejerzo esta
+							profesión/tarea.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">11</td>
+						<td class="col-item">
+							Me preocupa el hecho de que este trabajo me endurezca
+							emocionalmente.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">12</td>
+						<td class="col-item">Me siento muy enérgico.</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">13</td>
+						<td class="col-item">Me siento frustrado en mi trabajo.</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">14</td>
+						<td class="col-item">Creo que estoy trabajando demasiado.</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">15</td>
+						<td class="col-item">
+							Realmente no me preocupa lo que le ocurre a mis usuarios/clientes.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">16</td>
+						<td class="col-item">
+							Trabajar directamente con personas me produce estrés.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">17</td>
+						<td class="col-item">
+							Puedo crear fácilmente una atmósfera relajada con mis
+							usuarios/clientes.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">18</td>
+						<td class="col-item">
+							Me siento estimulado después de trabajar con mis
+							usuarios/clientes.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">19</td>
+						<td class="col-item">
+							He conseguido muchas cosas útiles en mi profesión/tarea.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">20</td>
+						<td class="col-item">Me siento acabado.</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">21</td>
+						<td class="col-item">
+							En mi trabajo trato los problemas emocionales con mucha calma.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">22</td>
+						<td class="col-item">
+							Siento que los usuarios/clientes me culpan por alguno de sus
+							problemas.
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<!-- ====================================================================
+         PIE DE PÁGINA
+         ==================================================================== -->
+		<footer class="pie-pagina">
+			Adaptado del Cuestionario Maslach Burnout Inventory (MBI) - Maslach, 1986
+		</footer>
+
+		<aside class="nota-ocr">
+			* Este formato está optimizado para lectura OCR. Por favor, no haga marcas
+			fuera de las burbujas.
+		</aside>
+	</body>
+</html>

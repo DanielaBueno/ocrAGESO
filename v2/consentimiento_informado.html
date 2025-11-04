@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consentimiento Informado Psicológico - AGESO</title>
+    
+    <!-- ===== HOJAS DE ESTILO REQUERIDAS ===== -->
+    <link rel="stylesheet" href="estilos/estilos_base.css">
+    
+    <!-- ===== ESTILOS ESPECÍFICOS PARA CONSENTIMIENTO ===== -->
+    <style>
+        /* Estilos específicos para el documento de consentimiento */
+        .contenido-consentimiento {
+            padding: 20px 0;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        .contenido-consentimiento p {
+            margin-bottom: 15px;
+            font-size: 11px;
+            color: #333;
+        }
+        
+        .titulo-documento {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--color-primario);
+            margin: 20px 0;
+            text-transform: uppercase;
+        }
+        
+        .seccion-fecha {
+            margin: 20px 0;
+        }
+        
+        .seccion-fecha label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .seccion-fecha input {
+            border: none;
+            border-bottom: 1px solid #333;
+            width: 200px;
+            padding: 2px 5px;
+            font-size: 11px;
+        }
+        
+        .campo-firma {
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+        
+        .linea-firma {
+            border-top: 2px solid #333;
+            width: 60%;
+            margin: 0 auto 10px;
+            padding-top: 5px;
+        }
+        
+        .texto-firma {
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+        
+        .campo-documento {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .campo-documento label {
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        .campo-documento input {
+            border: none;
+            border-bottom: 1px solid #333;
+            width: 250px;
+            padding: 2px 5px;
+            font-size: 11px;
+        }
+        
+        /* Pie de página para consentimiento */
+        .pie-consentimiento {
+            margin-top: 30px;
+            padding: 10px;
+            background: var(--color-fondo-seccion);
+            border: 2px solid var(--color-primario);
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .info-contacto {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size: 9px;
+            margin-top: 10px;
+        }
+        
+        .info-contacto div {
+            margin: 5px;
+        }
+        
+        /* Logo Supersalud */
+        .logo-supersalud {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .logo-supersalud img {
+            width: 120px;
+            height: auto;
+        }
+        
+        .vigilado-texto {
+            text-align: center;
+            font-size: 9px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        
+        @media print {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- ====================================================================
+         ENCABEZADO ESTÁNDAR
+         ==================================================================== -->
+    <header class="encabezado">
+        <!-- Logo AGESO -->
+        <div class="area-logo">
+            <img class="logo-ageso" src="logo_ageso.png" alt="Logo AGESO">
+            <div class="codigo-referencia">NIT 807.001.777 - 6</div>
+        </div>
+        
+        <!-- Título Principal -->
+        <div class="titulo-principal">
+            <h1>AGESO</h1>
+            <h2>Asesorías en General, Educación & Salud Ocupacional</h2>
+        </div>
+        
+        <!-- Área para Código QR -->
+        <div class="area-codigo">
+            <strong>PEGAR CÓDIGO QR AQUÍ</strong>
+            <div class="espacio-sticker">
+                Código QR
+            </div>
+        </div>
+    </header>
+    <main>
+    <!-- ====================================================================
+         TÍTULO DEL DOCUMENTO
+         ==================================================================== -->
+    <section class="titulo-documento">
+        Consentimiento Informado Psicológico
+    </section>
+    
+    <!-- ====================================================================
+         CAMPO DE FECHA
+         ==================================================================== -->
+    <section class="seccion-fecha">
+        <label>Fecha:</label>
+        <input type="text" placeholder="DD / MM / AAAA">
+    </section>
+    
+    <!-- ====================================================================
+         CONTENIDO DEL CONSENTIMIENTO
+         ==================================================================== -->
+    <section class="contenido-consentimiento">
+        <p>
+            De acuerdo a la ley 1090 de 2006 por la cual se reglamenta el ejercicio de la profesión de 
+            psicología, se dicta el código deontológico y bioético, específicamente el artículo 25 que se 
+            refiere a la confidencialidad de la información obtenida por el profesional, excepto casos 
+            específicos como: cuando dicha evaluación o intervención ha sido solicitada por una 
+            autoridad competente, en este caso empleadores.
+        </p>
+        
+        <p>
+            Por lo cual autorizo a AGESO S.A.S para que mediante el profesional (psicólogo especialista) 
+            me sea realizada la prueba psicotécnica que la empresa solicita, además de ser enviados 
+            los resultados al encargado y/o me sean entregados personalmente haciendo la respectiva 
+            solicitud de una copia de mi historia clínica.
+        </p>
+    </section>
+    
+    <!-- ====================================================================
+         CAMPOS DE IDENTIFICACIÓN
+         ==================================================================== -->
+    <section class="campo-documento">
+        <div>
+            <label>Nombres y apellidos:</label>
+            <input type="text">
+        </div>
+    </section>
+    
+    <section class="campo-documento">
+        <div>
+            <label>Número de identificación:</label>
+            <input type="text">
+        </div>
+    </section>
+    
+    <!-- ====================================================================
+         ÁREA DE FIRMA
+         ==================================================================== -->
+    <section class="campo-firma">
+        <div class="linea-firma"></div>
+        <div class="texto-firma">FIRMA DEL EVALUADO</div>
+    </section>
+    </main>
+    <!-- ====================================================================
+         PIE DE PÁGINA CON INFORMACIÓN DE CONTACTO
+         ==================================================================== -->
+    <footer class="pie-consentimiento">
+        <div class="info-contacto">
+            <div><strong>📍</strong> Calle 15 # 2 - 82 Barrio La playa</div>
+            <div><strong>📞</strong> 607 5748874 - 3103916134</div>
+            <div><strong>🌐</strong> www.ageso.co</div>
+        </div>
+        <div class="info-contacto">
+            <div><strong>📧</strong> citas@ageso.co</div>
+            <div><strong>📧</strong> info@ageso.co</div>
+            <div><strong>📧</strong> servicioalcliente@ageso.co</div>
+        </div>
+        <div class="info-contacto">
+            <div><strong>📱</strong> AGESO IPS</div>
+            <div><strong>Instagram:</strong> ageso_ips</div>
+        </div>
+    </footer>
+    
+    <!-- ====================================================================
+         LOGO VIGILADO POR SUPERSALUD
+         ==================================================================== -->
+    <div class="logo-supersalud">
+        <img src="logo_supersalud.png" alt="Vigilado Supersalud">
+        <div class="vigilado-texto">Vigilado</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecedentes Patológicos Personales y Familiares - AGESO</title>
+    
+    <!-- ===== HOJAS DE ESTILO REQUERIDAS ===== -->
+    <link rel="stylesheet" href="estilos/estilos_base.css">
+    <link rel="stylesheet" href="estilos/estilos_tabla.css">
+    
+    <!-- ===== ESTILOS PERSONALIZADOS ===== -->
+    <style>
+        /* Ajustes específicos para este test */
+        .seccion-respuestas-simples {
+            margin-bottom: 15px;
+        }
+        
+        .pregunta-simple {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            font-size: 11px;
+        }
+        
+        .pregunta-simple:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .texto-pregunta-simple {
+            flex: 1;
+            padding-right: 15px;
+        }
+        
+        .opciones-simple {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .opcion-simple {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: bold;
+        }
+        
+        /* Título de sección destacado */
+        .titulo-seccion {
+            background: var(--color-primario);
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+        }
+        
+        /* Escala horizontal para Acrofobia */
+        .escala-acrofobia {
+            display: flex;
+            justify-content: center;
+            gap: 3px;
+            font-size: 9px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .escala-acrofobia span {
+            background: #f0f0f0;
+            padding: 3px 6px;
+            border: 1.5px solid #666;
+            border-radius: 3px;
+        }
+        
+        /* Tabla compacta para acrofobia */
+        .tabla-acrofobia {
+            font-size: 10px;
+        }
+        
+        .tabla-acrofobia td {
+            padding: 5px;
+        }
+        
+        .tabla-acrofobia .col-numero {
+            width: 30px;
+        }
+        
+        .tabla-acrofobia .col-respuesta {
+            width: 30px;
+        }
+        
+        /* Fila de totales */
+        .fila-total {
+            background: #e8f5e9 !important;
+            font-weight: bold;
+        }
+        
+        .fila-total td {
+            border: 2px solid var(--color-primario) !important;
+        }
+        
+        /* Subtítulo de parte */
+        .subtitulo-parte {
+            background: #e8f5e9;
+            padding: 6px;
+            font-weight: bold;
+            font-size: 11px;
+            color: var(--color-primario);
+            text-align: center;
+            border: 2px solid var(--color-primario);
+            border-radius: 3px;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- ====================================================================
+         ENCABEZADO ESTÁNDAR
+         ==================================================================== -->
+    <header class="encabezado">
+        <!-- Logo AGESO -->
+        <div class="area-logo">
+            <img class="logo-ageso" src="logo_ageso.png" alt="Logo AGESO">
+        </div>
+        
+        <!-- Título Principal -->
+        <div class="titulo-principal">
+            <h1>ANTECEDENTES PATOLÓGICOS PERSONALES Y FAMILIARES</h1>
+            <h2>CUESTIONARIO DE ACROFOBIA (AQ)</h2>
+        </div>
+        
+        <!-- Código QR -->
+        <div class="area-codigo">
+            <strong>PEGAR CÓDIGO QR AQUÍ</strong>
+            <div class="espacio-sticker">
+                Código QR
+            </div>
+        </div>
+    </header>
+    
+    <main> 
+        <!-- ====================================================================
+             INFORMACIÓN DEL EVALUADO
+             ==================================================================== -->
+        <section class="seccion-informacion">
+            <article class="campo-info campo-completo">
+                <label>Nombre(s) y Apellido(s):</label>
+                <input type="text">
+                <div class="campo-info">
+                    <label>CC:</label>
+                    <input type="text">
+                </div>
+                <div class="campo-info">
+                    <label>Fecha:</label>
+                    <input type="text">
+                </div>
+            </article>
+
+            <article class="campo-info">
+                <label>Empresa:</label>
+                <input type="text">
+            </article>
+
+            <article class="campo-info">
+                <label>Cargo:</label>
+                <input type="text">
+            </article>
+        </section>
+        
+        <!-- ====================================================================
+             GUÍA DE MARCADO
+             ==================================================================== -->
+        <aside class="guia-marcado">
+            <div class="ejemplo-marca">
+                <span>✓ CORRECTO:</span>
+                <div class="marca-correcta"></div>
+            </div>
+            <div class="ejemplo-marca">
+                <span>✗ INCORRECTO:</span>
+                <div class="marca-incorrecta"></div>
+            </div>
+            <div class="ejemplo-marca">
+                <span>🖊 Use lápiz o bolígrafo NEGRO</span>
+            </div>
+        </aside>
+        
+        <!-- ====================================================================
+             1. HÁBITOS Y ESTILOS DE VIDA
+             ==================================================================== -->
+        <div class="titulo-seccion">1. ANTECEDENTES PATOLÓGICOS PERSONALES Y FAMILIARES</div>
+        
+        <section class="seccion-respuestas-simples">
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">Antecedente</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span>Sí</span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span>No</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Ha estado usted en tratamiento psicológico o psiquiátrico en algún momento de su vida?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Se encuentra actualmente en algún tratamiento psicológico o psiquiátrico?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Ha sufrido accidentes o caídas en algún trabajo al desempeñar labores de trabajo en alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Actualmente usted o algún miembro?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Alguien en su familia ha experimentado dificultad para realizar en alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Sus sentimientos o su estado de ánimo le afectan su actual condición?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Padece alteraciones frecuentes del sueño/insomnio?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ====================================================================
+             2. ANTECEDENTES OCUPACIONALES DE TRABAJO EN ALTURAS
+             ==================================================================== -->
+        <div class="titulo-seccion">2. ANTECEDENTES OCUPACIONALES DE TRABAJO EN ALTURAS</div>
+        
+        <section class="seccion-respuestas-simples">
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Ha tenido alguna antes de realizar actividad o de psicológico que le afecten su actual condición?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Realiza alguna actividades en alturas dentro de elementos de protección personal?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ====================================================================
+             3. HÁBITOS Y ESTILOS DE VIDA
+             ==================================================================== -->
+        <div class="titulo-seccion">3. HÁBITOS Y ESTILOS DE VIDA</div>
+        
+        <div class="instrucciones">
+            <p>SIN TENER EN CUENTA LA EDAD, POR FAVOR RESPONDER</p>
+        </div>
+        
+        <section class="seccion-respuestas-simples">
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Realiza actividades en alturas utilizando elementos de protección personal?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span>Sí</span>
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span>No</span>
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿La ha informado usted a su empleado de algún inconveniente para realizar en alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Ha presentado algún incumplimiento realizado al alturas en alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Cuando que la última vez que realizó se sirvió en alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Ha sido evaluado anteriormente con método en estudios pasa realizar trabajando en alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Cuándo tiempo más realizando trabajo en alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Cuánto tiempo lleva realizando trabajo en alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Ha trabajado usted sobre pilares o alturas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Al despertar en las mañanas siente la necesidad de dormir más tiempo?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Se despierta fácilmente varias veces durante la noche?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Le es difícil conciliar el sueño?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ====================================================================
+             CONSUMO DE SUSTANCIAS PSICOACTIVAS
+             ==================================================================== -->
+        <div class="titulo-seccion">CONSUMO DE SUSTANCIAS PSICOACTIVAS</div>
+        
+        <section class="seccion-respuestas-simples">
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Fuma tabaco o alguna otra sustancia y/o Médicos?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Consume drogas con motivos sociales y/o recreativos y/o médicos?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Con que frecuencia consume estas drogas o sustancias?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Cuándo fue la última vez que la consumió?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Consume más de dos copas de licor en 24 horas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pregunta-simple">
+                <div class="texto-pregunta-simple">¿Cada cuánto consume más de dos copas de licor en 24 horas?</div>
+                <div class="opciones-simple">
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                    <div class="opcion-simple">
+                        <span class="burbuja"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SALTO DE PÁGINA -->
+        <div style="page-break-before: always;"></div>
+        
+        <!-- ====================================================================
+             4. CUESTIONARIO DE ACROFOBIA (AQ)
+             ==================================================================== -->
+        <div class="titulo-seccion">4. CUESTIONARIO DE ACROFOBIA (AQ)</div>
+        
+        <div class="instrucciones">
+            <h3>INSTRUCCIONES:</h3>
+            <p>A continuación se presentan diferentes situaciones relacionadas con alturas. Por favor, indique su nivel de ansiedad o evitación marcando la opción que mejor describa su respuesta.</p>
+        </div>
+        
+        <!-- ====================================================================
+             PARTE I: ESCALA DE ANSIEDAD
+             ==================================================================== -->
+        <div class="subtitulo-parte">Parte I: Escala de Ansiedad</div>
+        
+        <div class="escala-acrofobia">
+            <span>0 = Nada</span>
+            <span>1 = Muy poco</span>
+            <span>2 = Poco</span>
+            <span>3 = Algo</span>
+            <span>4 = Bastante</span>
+            <span>5 = Mucho</span>
+            <span>6 = Muchísimo</span>
+        </div>
+        
+        <section class="seccion-preguntas">
+            <table class="tabla-preguntas tabla-acrofobia tabla-compacta">
+                <thead>
+                    <tr>
+                        <th class="col-numero">No.</th>
+                        <th>SITUACIÓN</th>
+                        <th class="col-respuesta">0</th>
+                        <th class="col-respuesta">1</th>
+                        <th class="col-respuesta">2</th>
+                        <th class="col-respuesta">3</th>
+                        <th class="col-respuesta">4</th>
+                        <th class="col-respuesta">5</th>
+                        <th class="col-respuesta">6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-numero">1</td>
+                        <td class="col-item">Saltando desde el trampolín más bajo de una piscina</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">2</td>
+                        <td class="col-item">Saltando sobre las piedras para pasar por encima de una corriente de agua</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">3</td>
+                        <td class="col-item">Mirando hacia abajo en una escalera de caracol desde una altura de varios pisos</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">4</td>
+                        <td class="col-item">De pie en el peldaño de una escalera que está apoyada sobre la fachada de una casa en el segundo piso</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">5</td>
+                        <td class="col-item">Sentado en el balcón de un segundo piso de un teatro</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">6</td>
+                        <td class="col-item">Montado en una rueda de chicago (noria) de una feria</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">7</td>
+                        <td class="col-item">Subiendo una colina inclinada de excursión por el campo</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">8</td>
+                        <td class="col-item">Un viaje en avión (al otro extremo del mismo país)</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">9</td>
+                        <td class="col-item">De pie cerca de una ventana abierta en el tercer piso</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">10</td>
+                        <td class="col-item">Pasando por un puente peatonal por encima de una calle</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">11</td>
+                        <td class="col-item">Conduciendo sobre un puente muy amplio</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">12</td>
+                        <td class="col-item">Alejado de la ventana en una oficina del piso 15 de un edificio</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">13</td>
+                        <td class="col-item">Ver a personas sobre una plataforma limpiando ventanas en el piso 10 de un edificio</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">14</td>
+                        <td class="col-item">Andando por el borde del escenario de un teatro</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">15</td>
+                        <td class="col-item">De pie en el borde de la plataforma de la estación del metro – bus – Transmilenio – Metroplus, u otros similares</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">16</td>
+                        <td class="col-item">Subiendo por una escalera de incendios exterior en el tercer piso</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">17</td>
+                        <td class="col-item">En la azotea de un edificio de 10 pisos</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">18</td>
+                        <td class="col-item">Subiendo en un ascensor hasta el piso 50</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">19</td>
+                        <td class="col-item">De pie sobre una silla intentando coger algo de una estantería</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">20</td>
+                        <td class="col-item">Subiendo por un puente provisional o pasarela para entrar o salir de un barco</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr class="fila-total">
+                        <td colspan="2" style="text-align: right; padding-right: 15px;">Total, Escala de Ansiedad =</td>
+                        <td class="col-respuesta"></td>
+                        <td class="col-respuesta"></td>
+                        <td class="col-respuesta"></td>
+                        <td class="col-respuesta"></td>
+                        <td class="col-respuesta"></td>
+                        <td class="col-respuesta"></td>
+                        <td class="col-respuesta"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- ====================================================================
+             PARTE II: ESCALA DE EVITACIÓN
+             ==================================================================== -->
+        <div class="subtitulo-parte">Parte II: Escala de Evitación</div>
+        
+        <div class="escala-acrofobia">
+            <span>0 = Nunca evito</span>
+            <span>1 = Rara vez evito</span>
+            <span>2 = Evito</span>
+        </div>
+        
+        <section class="seccion-preguntas">
+            <table class="tabla-preguntas tabla-acrofobia tabla-compacta">
+                <thead>
+                    <tr>
+                        <th class="col-numero">No.</th>
+                        <th>SITUACIÓN</th>
+                        <th class="col-respuesta">0</th>
+                        <th class="col-respuesta">1</th>
+                        <th class="col-respuesta">2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-numero">1</td>
+                        <td class="col-item">Saltando desde el trampolín más bajo de una piscina.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">2</td>
+                        <td class="col-item">Saltando sobre las piedras para pasar por encima de una corriente de agua.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">3</td>
+                        <td class="col-item">Mirando hacia abajo en una escalera de caracol desde una altura de varios pisos.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">4</td>
+                        <td class="col-item">De pie en el peldaño de una escalera que está apoyada sobre la fachada de una casa, en el segundo piso.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">5</td>
+                        <td class="col-item">Sentado en el balcón de un segundo piso de un teatro.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">6</td>
+                        <td class="col-item">Montado en una rueda de chicago (noria) de una feria.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">7</td>
+                        <td class="col-item">Subiendo una colina inclinada de excursión por el campo.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">8</td>
+                        <td class="col-item">Un viaje en avión (al otro extremo del mismo país).</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">9</td>
+                        <td class="col-item">De pie cerca de una ventana abierta en el tercer piso.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">10</td>
+                        <td class="col-item">Pasando por un puente peatonal por encima de una calle.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">11</td>
+                        <td class="col-item">Conduciendo sobre un puente muy amplio</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">12</td>
+                        <td class="col-item">Alejado de la ventana en una oficina del piso 15 de un edificio.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">13</td>
+                        <td class="col-item">Ver a personas sobre una plataforma limpiando ventanas en el piso 10 de un edificio.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">14</td>
+                        <td class="col-item">Andando por el borde del escenario de un teatro.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">15</td>
+                        <td class="col-item">De pie en el borde de la plataforma de la estación del metro – bus – Transmilenio – Metroplus, u otros similares.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">16</td>
+                        <td class="col-item">Subiendo por una escalera de incendios exterior en el tercer piso.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">17</td>
+                        <td class="col-item">En la azotea de un edificio de 10 pisos.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">18</td>
+                        <td class="col-item">Subiendo en un ascensor hasta el piso 50.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">19</td>
+                        <td class="col-item">De pie sobre una silla intentando coger algo de una estantería.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-numero">20</td>
+                        <td class="col-item">Subiendo por un puente provisional o pasarela para entrar o salir de un barco.</td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                        <td class="col-respuesta"><span class="burbuja"></span></td>
+                    </tr>
+                    <tr class="fila-total">
+                        <td colspan="2" style="text-align: right; padding-right: 15px;">Total, Escala de Evitación =</td>
+                        <td class="col-respuesta"></td>
+                        <td class="col-respuesta"></td>
+                        <td class="col-respuesta"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <!-- ====================================================================
+         PIE DE PÁGINA
+         ==================================================================== -->
+    <footer class="pie-pagina">
+        CUESTIONARIO DE ACROFOBIA (AQ) - ANTECEDENTES PATOLÓGICOS PERSONALES Y FAMILIARES
+    </footer>
+    
+    <!-- ====================================================================
+         NOTA OCR
+         ==================================================================== -->
+    <aside class="nota-ocr">
+        * Este formato está optimizado para lectura OCR. Por favor, no haga marcas fuera de las burbujas.
+    </aside>
+    
+</body>
+</html>

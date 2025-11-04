@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Estrés Laboral de Hock - AGESO</title>
+    
+    <!-- ===== HOJAS DE ESTILO DEL SISTEMA MODULAR ===== -->
+    <link rel="stylesheet" href="estilos/estilos_base.css">
+    <link rel="stylesheet" href="estilos/estilos_tabla.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- ====================================================================
+         ENCABEZADO ESTÁNDAR
+         ==================================================================== -->
+    <header class="encabezado">
+        <div class="area-logo">
+            <img class="logo-ageso" src="logo_ageso.png" alt="Logo AGESO">
+        </div>
+        
+        <div class="titulo-principal">
+            <h1>HOCK</h1>
+            <h2>Test de Estrés Laboral de HOCK</h2>
+        </div>
+        
+        <!-- Área para Código QR - NO MODIFICAR -->
+        <div class="area-codigo">
+            <strong>PEGAR CÓDIGO QR AQUÍ</strong>
+            <div class="espacio-sticker">
+                Código QR
+            </div>
+        </div>
+    </header>
+    
+    <main>
+    <!-- ====================================================================
+         INFORMACIÓN DEL EVALUADO
+         ==================================================================== -->
+    <section class="seccion-informacion">
+        <article class="campo-info campo-completo">
+            <label>Nombre(s) y Apellido(s):</label>
+            <input type="text">
+            <div class="campo-info">
+                <label>CC:</label>
+                <input type="text">
+            </div>
+            <div class="campo-info">
+                <label>Fecha:</label>
+                <input type="text">
+            </div>
+        </article>
+        <article class="campo-info">
+            <label>Empresa:</label>
+            <input type="text">
+        </article>
+        <article class="campo-info">
+            <label>Cargo:</label>
+            <input type="text">
+        </article>
+    </section>
+    
+    <!-- ====================================================================
+         GUÍA DE MARCADO
+         ==================================================================== -->
+    <aside class="guia-marcado">
+        <div class="ejemplo-marca">
+            <span>✓ CORRECTO:</span>
+            <div class="marca-correcta"></div>
+        </div>
+        <div class="ejemplo-marca">
+            <span>✗ INCORRECTO:</span>
+            <div class="marca-incorrecta"></div>
+        </div>
+        <div class="ejemplo-marca">
+            <span>🖊  Use lápiz o bolígrafo NEGRO</span>
+        </div>
+    </aside>
+    
+    <!-- ====================================================================
+         INSTRUCCIONES
+         ==================================================================== -->
+    <section class="instrucciones">
+        <h3>INSTRUCCIONES</h3>
+        <p>De los siguientes síntomas, seleccione el grado experimentado durante los <strong>últimos 3 meses</strong>. Marque según la frecuencia con la que ha experimentado cada síntoma.</p>
+        
+        <!-- Escala en formato inline -->
+        <article class="escala-inline">
+            <span><strong>1.</strong> Nunca</span>
+            <span><strong>2.</strong> Casi nunca</span>
+            <span><strong>3.</strong> Pocas veces</span>
+            <span><strong>4.</strong> Algunas veces</span>
+            <span><strong>5.</strong> Relativamente frecuente</span>
+            <span><strong>6.</strong> Muy frecuente</span>
+        </article>
+    </section>
+    
+    <!-- ====================================================================
+         TABLA DE SÍNTOMAS
+         ==================================================================== -->
+    <table class="tabla-preguntas">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>SÍNTOMA</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col-numero">1</td>
+                <td class="col-item">Imposibilidad de conciliar el sueño</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">2</td>
+                <td class="col-item">Jaquecas y dolores de cabeza</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">3</td>
+                <td class="col-item">Indigestiones o molestias gastrointestinales</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">4</td>
+                <td class="col-item">Sensación de cansancio extremo o agotamiento</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">5</td>
+                <td class="col-item">Tendencia de comer, beber o fumar más de lo habitual</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">6</td>
+                <td class="col-item">Disminución del interés sexual</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">7</td>
+                <td class="col-item">Respiración entrecortada o sensación de ahogo</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">8</td>
+                <td class="col-item">Disminución del apetito</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">9</td>
+                <td class="col-item">Temblores musculares (por ejemplo tics nerviosos o parpadeos)</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">10</td>
+                <td class="col-item">Pinchazos o sensaciones dolorosas en distintas partes del cuerpo</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">11</td>
+                <td class="col-item">Tentaciones fuertes de no levantarse por la mañana</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">12</td>
+                <td class="col-item">Tendencias a sudar o palpitaciones</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+    <!-- ====================================================================
+         PIE DE PÁGINA
+         ==================================================================== -->
+    <div class="pie-pagina">
+        Test de Estrés Laboral de Hock - Evaluación de síntomas relacionados con estrés ocupacional
+    </div>
+    
+    <div class="nota-ocr">
+        * Este formato está optimizado para lectura OCR. Por favor, no haga marcas fuera de las burbujas.
+    </div>
+</body>
+</html>

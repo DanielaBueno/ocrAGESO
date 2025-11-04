@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TestCuestionario MMPI - AGESO</title>
+
+		<!-- ===== HOJAS DE ESTILO REQUERIDAS ===== -->
+		<link rel="stylesheet" href="estilos/estilos_base.css" />
+		<link rel="stylesheet" href="estilos/estilos_tabla.css" />
+		<style>
+			.encabezado {
+				margin-bottom: 3px;
+			}
+
+			.tabla-preguntas {
+				margin: 5px 0px;
+			}
+			.seccion-informacion,
+			.guia-marcado,
+			.instruccioness,
+			.pie-pagina {
+				padding: 5px 0px;
+				margin: 3px 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- ====================================================================
+         ENCABEZADO ESTÁNDAR
+         ==================================================================== -->
+		<header class="encabezado">
+			<!-- Logo AGESO -->
+			<div class="area-logo">
+				<img class="logo-ageso" src="logo_ageso.png" alt="Logo AGESO" />
+			</div>
+
+			<!-- Título Principal -->
+			<div class="titulo-principal">
+				<h1>MMPI</h1>
+				<h2>Inventario Multifásico de Personalidad de Minnesota</h2>
+			</div>
+
+			<!-- Área para Código QR -->
+			<div class="area-codigo">
+				<strong>PEGAR CÓDIGO QR AQUÍ</strong>
+				<div class="espacio-sticker">Código QR</div>
+			</div>
+		</header>
+		<main>
+			<!-- ====================================================================
+            INFORMACIÓN DEL EVALUADO
+            ==================================================================== -->
+			<section class="seccion-informacion">
+				<article class="campo-info campo-completo">
+					<label>Nombre(s) y Apellido(s):</label>
+					<input type="text" />
+					<div class="campo-info">
+						<label>CC:</label>
+						<input type="text" />
+					</div>
+					<div class="campo-info">
+						<label>Fecha:</label>
+						<input type="text" />
+					</div>
+				</article>
+			</section>
+
+			<!-- ====================================================================
+            GUÍA DE MARCADO
+            ==================================================================== -->
+			<aside class="guia-marcado">
+				<div class="ejemplo-marca">
+					<span>✓ CORRECTO:</span>
+					<div class="marca-correcta"></div>
+				</div>
+				<div class="ejemplo-marca">
+					<span>✗ INCORRECTO:</span>
+					<div class="marca-incorrecta"></div>
+				</div>
+				<div class="ejemplo-marca">
+					<span>🖊 Use lápiz o bolígrafo NEGRO</span>
+				</div>
+			</aside>
+
+			<!-- ====================================================================
+            INSTRUCCIONES
+            ==================================================================== -->
+			<section class="instruccioness">
+				Responda a las siguientes frases con verdadero (V) o Falso (F). - Trate
+				de ser sincero consigo mismo y use su propio criterio.
+			</section>
+
+			<!-- ====================================================================
+            TABLA DE PREGUNTAS
+            ==================================================================== -->
+			<table class="tabla-preguntas">
+				<thead>
+					<tr>
+						<th class="col-numero">No.</th>
+						<th class="col-item">ÍTEM</th>
+						<th class="col-respuesta">V</th>
+						<th class="col-respuesta">F</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="col-numero">1</td>
+						<td class="col-item">Tengo buen apetito</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">2</td>
+						<td class="col-item">
+							Me despierto descansado y fresco casi todas las mañanas
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">3</td>
+						<td class="col-item">
+							Mi vida diaria está llena de cosas que me mantienen interesado
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">4</td>
+						<td class="col-item">Trabajo bajo una tensión muy grande</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">5</td>
+						<td class="col-item">
+							De vez en cuando pienso cosas demasiado malas para hablar de ellas
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">6</td>
+						<td class="col-item">Muy raras veces sufro de estreñimiento</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">7</td>
+						<td class="col-item">
+							A veces he sentido un inmenso deseo de abandonar mi hogar
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">8</td>
+						<td class="col-item">
+							A veces me dan accesos de ira o llanto que no puedo controlar
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">9</td>
+						<td class="col-item">Sufro ataques de náuseas y de vómitos</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">10</td>
+						<td class="col-item">Nadie parece comprenderme</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">11</td>
+						<td class="col-item">A veces siento deseos de maldecir</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">12</td>
+						<td class="col-item">Me dan pesadillas con mucha frecuencia</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">13</td>
+						<td class="col-item">
+							Encuentro difícil concentrarme en una tarea o trabajo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">14</td>
+						<td class="col-item">
+							He tenido experiencias muy peculiares y extrañas
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">15</td>
+						<td class="col-item">
+							Si la gente no se la hubiera cogido conmigo, yo hubiera tenido
+							mucho mas éxito
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">16</td>
+						<td class="col-item">
+							Por un tiempo, cuando era mas joven, participe en pequeños robos
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">17</td>
+						<td class="col-item">
+							He tenido períodos de días, semanas o meses que no podía ocuparme
+							de nada, porque no tenía voluntad para hacerlo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">18</td>
+						<td class="col-item">Mi sueño es irregular e intranquilo</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">19</td>
+						<td class="col-item">
+							Cuando estoy con gente, me molesta oír cosas muy extrañas
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">20</td>
+						<td class="col-item">
+							Le agrado a la mayor parte de la gente que me conoce
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">21</td>
+						<td class="col-item">
+							Con frecuencia he tenido que recibir ordenes de alguien que no
+							sabía tanto como yo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">22</td>
+						<td class="col-item">
+							Quisiera poder ser tan feliz como otras personas parecen serlo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">23</td>
+						<td class="col-item">
+							Creo que mucha gente exagera sus desdichas para que se consuelen
+							de ellos y les ayuden
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">24</td>
+						<td class="col-item">Algunas veces me enojo</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">25</td>
+						<td class="col-item">
+							Decididamente no tengo confianza en mi mismo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">26</td>
+						<td class="col-item">
+							Tengo poco o ningún problema con espasmos o contracciones
+							musculares
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">27</td>
+						<td class="col-item">
+							Muchas veces me siento como si hubiera hecho algo incorrecto o
+							malo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">28</td>
+						<td class="col-item">Casi siempre soy feliz</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">29</td>
+						<td class="col-item">
+							Algunas personas son tan dominantes que he sentido el deseo de
+							hacer lo contrario de lo que me piden, aunque sepa que tienen
+							razón
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">30</td>
+						<td class="col-item">Creo que están conspirando contra mi</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">31</td>
+						<td class="col-item">
+							La mayor parte de la gente se vale de medios algo injustos para
+							obtener beneficios o ventajas antes que perderlos
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">32</td>
+						<td class="col-item">Sufro mucho de trastornos estomacales</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">33</td>
+						<td class="col-item">
+							A menudo no puedo comprender porque he estado tan irritable y
+							malhumorado
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">34</td>
+						<td class="col-item">
+							A veces los pensamientos pasan por mi mente con mayor rapidez que
+							lo que puedo expresarlo con palabras
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">35</td>
+						<td class="col-item">
+							Creo que mi vida de hogar es tan agradable como la mayor parte de
+							la gente que conozco
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">36</td>
+						<td class="col-item">
+							Decididamente, a veces me siento que no sirvo para nada
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">37</td>
+						<td class="col-item">
+							Durante los últimos años he gozado de salud la mayor parte del
+							tiempo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">38</td>
+						<td class="col-item">
+							He tenido épocas durante las cuales he hecho cosas que luego no he
+							recordado haber hecho
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">39</td>
+						<td class="col-item">
+							Creo que recientemente he sido castigado sin motivo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">40</td>
+						<td class="col-item">Nunca me he sentido mejor que ahora</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">41</td>
+						<td class="col-item">No me preocupa lo que otros piensen de mi</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">42</td>
+						<td class="col-item">Mi memoria parece ser buena</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">43</td>
+						<td class="col-item">
+							Encuentro difícil entablar conversación con alguien que conozco
+							por primera vez
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">44</td>
+						<td class="col-item">
+							Siento debilidad general la mayor parte del tiempo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">45</td>
+						<td class="col-item">Muy pocas veces me duele la cabeza</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">46</td>
+						<td class="col-item">
+							No he tenido dificultad en mantener el equilibrio cuando camino
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">47</td>
+						<td class="col-item">
+							No me agradan todas las personas que conozco
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">48</td>
+						<td class="col-item">
+							Hay personas que quieren apoderarse de mis pensamientos o ideas
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">49</td>
+						<td class="col-item">Debería no ser tan tímido</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">50</td>
+						<td class="col-item">Creo que mis pecados son imperdonables</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">51</td>
+						<td class="col-item">
+							Frecuentemente me encuentro preocupado por algo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">52</td>
+						<td class="col-item">
+							Con frecuencia, mis padres se han opuesto a la clase de gente con
+							quien acostumbro salir
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">53</td>
+						<td class="col-item">A veces murmuro o chismeo con la gente</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">54</td>
+						<td class="col-item">
+							A veces siento que puedo tomar decisiones con extraordinaria
+							facilidad
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">55</td>
+						<td class="col-item">
+							Rara vez noto los latidos de mi corazón y muy pocas veces me
+							siento corto de respiración
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">56</td>
+						<td class="col-item">
+							Me molesto con facilidad pero se me pasa pronto
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">57</td>
+						<td class="col-item">
+							Tengo períodos de tanta intranquilidad que no puedo permanecer
+							sentado en una silla por mucho tiempo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">58</td>
+						<td class="col-item">
+							Mis padres y familiares me encuentran mas defectos de los que
+							debieran
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">59</td>
+						<td class="col-item">A nadie le importa mucho lo que me sucede</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">60</td>
+						<td class="col-item">
+							No culpo a la persona que se aprovecha de alguien que se expone a
+							que le ocurra tal cosa
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">61</td>
+						<td class="col-item">A veces estoy lleno de energía</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">62</td>
+						<td class="col-item">
+							Mi vista esta tan buena ahora como lo ha estado por años
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">63</td>
+						<td class="col-item">
+							Casi nunca noto que me zumban o chillan los oídos
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">64</td>
+						<td class="col-item">
+							Una o mas veces en mi vida he sentido que alguien me hacia hacer
+							cosas hipnotizándome
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">65</td>
+						<td class="col-item">
+							Tengo épocas en la que me siento muy alegre sin tener una razón
+							especial
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">66</td>
+						<td class="col-item">
+							Aun cuando este acompañado, me siento solo la mayor parte del
+							tiempo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">67</td>
+						<td class="col-item">
+							Creo que casi todo el mundo mentiría para evitarse problemas
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">68</td>
+						<td class="col-item">
+							Soy mas sensible que la mayoría de la gente
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">69</td>
+						<td class="col-item">
+							Durante ciertos períodos, mi mente parece trabajar mas despacio
+							que de costumbre
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">70</td>
+						<td class="col-item">La gente me desilusiona con frecuencia</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">71</td>
+						<td class="col-item">He bebido alcohol en exceso</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">72</td>
+						<td class="col-item">
+							Siento remordimiento luego de estar tomando
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">73</td>
+						<td class="col-item">
+							La eficiencia en mi trabajo disminuye por efecto de la bebida
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">74</td>
+						<td class="col-item">
+							El tomar o ingerir alcohol crea algún tipo de daño en mi familia
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">75</td>
+						<td class="col-item">
+							Disminuyo o pierdo el control por efecto de la bebida
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+					<tr>
+						<td class="col-numero">76</td>
+						<td class="col-item">
+							Siento temblores a no ser que continúe bebiendo
+						</td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+						<td class="col-respuesta"><span class="burbuja"></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<!-- ====================================================================
+         PIE DE PÁGINA
+         ==================================================================== -->
+		<footer class="pie-pagina">
+			<strong>REVISE SI HA CONTESTADO A TODAS LAS FRASES</strong><br />
+			Inventario Multifásico de Personalidad de Minnesota
+		</footer>
+
+		<!-- ====================================================================
+         NOTA OCR
+         ==================================================================== -->
+		<aside class="nota-ocr">
+			* Este formato está optimizado para lectura OCR. Por favor, no haga marcas
+			fuera de las burbujas.
+		</aside>
+	</body>
+</html>

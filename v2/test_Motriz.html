@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Capacidad Mental - AGESO</title>
+    
+    <!-- ===== HOJAS DE ESTILO REQUERIDAS ===== -->
+    <link rel="stylesheet" href="estilos/estilos_base.css">
+    <link rel="stylesheet" href="estilos/estilos_tabla.css">
+    <link rel="stylesheet" href="estilos/estilos_mixto.css">
+    <style>
+        h1 {
+            /* font-size: 15px; */
+        }
+        .encabezado {
+            margin-bottom: 3px;
+        }
+        img {
+            width: auto;
+            height: 68px;
+        }
+        .tabla-preguntas td {
+            /* padding: 4px; */
+        }
+        .tabla-preguntas {
+            margin: 5px 0px;
+        }
+        .espacio-imagen{
+            padding: 0;
+            margin: 0;
+        }
+        .opcion-item {
+            /* margin: 5px 3px;
+            padding: 5px 10px; */
+        }
+        .pregunta-multiple strong {
+            margin: 5px;
+        }
+        .seccion-informacion,
+        .guia-marcado,
+        .instruccioness,
+        .pie-pagina {
+            padding: 5px 0px;
+            margin: 3px 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- ====================================================================
+         ENCABEZADO ESTÃNDAR
+         ==================================================================== -->
+    <header class="encabezado">
+        <!-- Logo AGESO -->
+        <div class="area-logo">
+            <img class="logo-ageso" src="logo_ageso.png" alt="Logo AGESO">
+        </div>
+        
+        <!-- Título Principal -->
+        <div class="titulo-principal">
+            <h1>TEST PSICOLOGICO PARA LA EVALUACIÓN DE LA CAPACIDAD MENTAL</h1>
+            <h2>            </h2>
+        </div>
+        
+        <!-- Área para Código QR -->
+        <div class="area-codigo">
+            <strong>PEGAR CÓDIGO QR AQUÍ</strong>
+            <div class="espacio-sticker">
+                Código QR
+            </div>
+        </div>
+    </header>
+    <main>
+    <!-- ====================================================================
+         INFORMACIÓN DEL EVALUADO
+         ==================================================================== -->
+    <section class="seccion-informacion">
+        <article class="campo-info campo-completo">
+            <label>Nombre(s) y Apellido(s):</label>
+            <input type="text">
+            <div class="campo-info">
+                <label>CC:</label>
+                <input type="text">
+            </div>
+            <div class="campo-info">
+                <label>Fecha:</label>
+                <input type="text">
+            </div>
+        </article>
+        <article class="campo-info">
+            <label>Edad:</label>
+            <input type="text">
+        </article>
+        <article class="campo-info">
+            <label>Escolaridad:</label>
+            <input type="text">
+        </article>
+    </section>
+    
+    <!-- ====================================================================
+         GUÍA DE MARCADO
+         ==================================================================== -->
+    <aside class="guia-marcado">
+        <div class="ejemplo-marca">
+            <span>✓ CORRECTO:</span>
+            <div class="marca-correcta"></div>
+        </div>
+        <div class="ejemplo-marca">
+            <span>✗ INCORRECTO:</span>
+            <div class="marca-incorrecta"></div>
+        </div>
+        <div class="ejemplo-marca">
+            <span>🖊 Use lápiz o bolígrafo NEGRO</span>
+        </div>
+    </aside>
+    
+    <!-- ====================================================================
+         INSTRUCCIONES
+         ==================================================================== -->
+    <section class="instruccioness">
+        RESPONDA CON SINCERIDAD MARCANDO LA OPCIÓN QUE MEJOR DESCRIBA SU SITUACIÓN
+    </section>
+    
+    <!-- ====================================================================
+         TABLA DE PREGUNTAS
+         ==================================================================== -->
+    <table class="tabla-preguntas">
+        <thead>
+            <tr>
+                <th class="col-numero">No.</th>
+                <th class="col-item">ÍTEM</th>
+                <th class="col-respuesta">SÍ</th>
+                <th class="col-respuesta">NO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- PREGUNTAS SÍ/NO (1-18) -->
+            <tr>
+                <td class="col-numero">1</td>
+                <td class="col-item">Con frecuencia se me olvida mi nombre y lugar de residencia</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">2</td>
+                <td class="col-item">Tengo que tomar medicamentos para poderme concentrar</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">3</td>
+                <td class="col-item">Si la gente me estresa tengo que responder con agresividad</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">4</td>
+                <td class="col-item">Suelo reaccionar de forma impulsiva si me llevan la contraria</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">5</td>
+                <td class="col-item">Me identifico por ser una persona demasiado calmada</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">6</td>
+                <td class="col-item">Se me dificulta relacionarme con los demás por mi forma de percibir las cosas</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">7</td>
+                <td class="col-item">Combino licores para poder embriagarme más rápido</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">8</td>
+                <td class="col-item">Cuando comienzo a tomar licor, es difícil poder controlarme</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">9</td>
+                <td class="col-item">He tenido problemas legales bajo efectos de alcohol</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">10</td>
+                <td class="col-item">Puedo pasar más de un mes sin consumir alcohol</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">11</td>
+                <td class="col-item">Últimamente me he sentido rechazado en todas partes</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">12</td>
+                <td class="col-item">Con frecuencia veo cosas que nadie más ve</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">13</td>
+                <td class="col-item">Usualmente escucho voces que no escuchan los demás</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">14</td>
+                <td class="col-item">Siento que por mis venas corre algo diferente</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">15</td>
+                <td class="col-item">Consumo sustancias tóxicas que me producen alucinaciones</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">16</td>
+                <td class="col-item">Consumo sustancias tóxicas a pesar de saber el daño que me hacen</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">17</td>
+                <td class="col-item">Consumo pastillas para poder dormir</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">18</td>
+                <td class="col-item">Necesito medicamentos para estar despierto</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            
+            <!-- PREGUNTA 19: Opción múltiple -->
+            <tr class="pregunta-multiple">
+                <td class="col-numero">19</td>
+                <td colspan="3">
+                    <strong>¿Cuántos minutos tiene una hora?</strong>
+                    <div class="opciones-horizontal">
+                        <div class="opcion-item">
+                            <span>A) 30 minutos</span>
+                            <span class="burbuja"></span>
+                        </div>
+                        <div class="opcion-item">
+                            <span>B) 60 minutos</span>
+                            <span class="burbuja"></span>
+                        </div>
+                        <div class="opcion-item">
+                            <span>C) 120 minutos</span>
+                            <span class="burbuja"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- PREGUNTA 20: Opción múltiple -->
+            <tr class="pregunta-multiple">
+                <td class="col-numero">20</td>
+                <td colspan="3">
+                    <strong>Colombia pertenece a:</strong>
+                    <div class="opciones-horizontal">
+                        <div class="opcion-item">
+                            <span>A) Norte América</span>
+                            <span class="burbuja"></span>
+                        </div>
+                        <div class="opcion-item">
+                            <span>B) Centro América</span>
+                            <span class="burbuja"></span>
+                        </div>
+                        <div class="opcion-item">
+                            <span>C) Sur América</span>
+                            <span class="burbuja-opcion"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- PREGUNTAS SÍ/NO (21-22) -->
+            <tr>
+                <td class="col-numero">21</td>
+                <td class="col-item">Siento satisfacción cuando puedo agredir a los demás</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">22</td>
+                <td class="col-item">Últimamente la gente habla de cosas que no recuerdo haber hecho</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            
+            <!-- PREGUNTA 23: Pregunta visual con espacio para imagen -->
+            <tr class="pregunta-multiple">
+                <td class="col-numero">23</td>
+                <td colspan="3">
+                    <strong>Observe la secuencia y seleccione la respuesta que considere apropiada</strong>
+                    <div class="espacio-imagen">
+                        <img src="media/motriz.PNG" alt="secuencia">
+                    </div>
+                    <div class="opciones-horizontal">
+                        <div class="opcion-item">
+                            <span>A) </span>
+                            <span class="burbuja"></span>
+                        </div>
+                        <div class="opcion-item">
+                            <span>B) </span>
+                            <span class="burbuja"></span>
+                        </div>
+                        <div class="opcion-item">
+                            <span>C) </span>
+                            <span class="burbuja"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- PREGUNTA 24: Opción múltiple -->
+            <tr class="pregunta-multiple">
+                <td class="col-numero">24</td>
+                <td colspan="3">
+                    <strong>¿Cuántos huevos hay en dos docenas y media?</strong>
+                    <div class="opciones-horizontal">
+                        <div class="opcion-item">
+                            <span>A) 24 huevos</span>
+                            <span class="burbuja"></span>
+                        </div>
+                        <div class="opcion-item">
+                            <span>B) 12 huevos</span>
+                            <span class="burbuja"></span>
+                        </div>
+                        <div class="opcion-item">
+                            <span>C) 30 huevos</span>
+                            <span class="burbuja"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- PREGUNTAS SÍ/NO (25-31) -->
+            <tr>
+                <td class="col-numero">25</td>
+                <td class="col-item">En el último mes me he ausentado de mis deberes por tener sueño excesivo</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">26</td>
+                <td class="col-item">Con frecuencia se me dificulta conciliar el sueño</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">27</td>
+                <td class="col-item">Tengo una enfermedad que me ocasiona movimientos involuntarios</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">28</td>
+                <td class="col-item">Estoy en un tratamiento médico que me ocasiona cambios fuertes de mi estado de ánimo</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">29</td>
+                <td class="col-item">En los últimos meses he pensado en dejar de vivir</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">30</td>
+                <td class="col-item">A pesar de mis intentos siento que todo me sale mal</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+            <tr>
+                <td class="col-numero">31</td>
+                <td class="col-item">Generalmente tengo cambios fuertes en mis decisiones</td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+                <td class="col-respuesta"><span class="burbuja"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    </main>    
+    <!-- ====================================================================
+         PIE DE PÁGINA
+         ==================================================================== -->
+    <footer>
+        <div class="pie-pagina">
+             Test de Capacidad Mental - Por favor revise que TODAS las preguntas hayan sido contestadas
+        </div>
+    
+    <!-- ====================================================================
+        NOTA OCR
+    ==================================================================== -->
+        <div class="nota-ocr">
+            * Este formato está optimizado para lectura OCR. Por favor, no haga marcas fuera de las burbujas.
+        </div>
+    </footer>
+
+    <!-- ====================================================================
+        ÁREA DE FIRMAS
+    ==================================================================== -->
+    <section class="area-firmas">
+        <article class="firma-box">
+            <div class="linea-firma">
+                <div class="info-firma">CC: __________________</div>
+                <label>Firma Evaluado</label>
+            </div>
+        </article>
+        <article class="firma-box">
+            <div class="linea-firma">
+                <div class="info-firma">Psicólogo(a) Especialista SST</div>
+                <div class="info-firma">Licencia N° __________</div>
+                <label>Firma Evaluador</label>
+            </div>
+        </article>
+    </section>
+
+    <div class="caja">
+    <!-- 🌟 ¡Hola! Soy una caja 🌟 -->
+    </div>
+    
+</body>
+</html>
