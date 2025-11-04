@@ -1,14 +1,4 @@
 /* ============================================
-   ESTILOS BASE PARA TODOS LOS TESTS PSICOLÓGICOS AGESO
-   Versión: 1.0
-   
-   INSTRUCCIONES DE USO:
-   1. Incluir este archivo en todos los tests: <link rel="stylesheet" href="estilos_base.css">
-   2. Si necesitas estilos de tabla, incluir también: <link rel="stylesheet" href="estilos_tabla.css">
-   3. Nunca modificar este archivo directamente, crear un CSS adicional si necesitas personalización
-   ============================================ */
-
-/* ============================================
    CONFIGURACIÓN DE PÁGINA PARA IMPRESIÓN
    ============================================ */
 @page {
@@ -26,154 +16,25 @@ derecha 0.34in */
 /* ============================================
    VARIABLES CSS GLOBALES - MODIFICAR AQUÍ
    ============================================ */
-:root {
-    /* Colores principales */
-    --color-primario: #006837; /* Verde AGESO */
-    --color-secundario: #7fc7af; /* Verde claro */
-    --color-borde: #000000;
-    --color-fondo-seccion: #e8f5e9;
-    --color-fondo-tabla: #f8f9fa;
-    --color-texto: #333333;
-    
-    /* Tamaños de burbujas/casillas - MODIFICAR AQUÍ PARA CAMBIAR TODAS */
-    --tamano-burbuja: 18px; /* Aumentar si OCR no detecta bien */
-    --grosor-borde-burbuja: 2.5px;
-    
-    /* Espaciados */
-    --espacio-entre-opciones: 8px;
-    --espacio-entre-preguntas: 6px;
-    
-    /* Tamaños de fuente */
-    --fuente-titulo: 28px;
-    --fuente-subtitulo: 13px;
-    --fuente-pregunta: 11px;
-    --fuente-info: 11px;
-    --fuente-nota: 9px;
-}
-
 /* ============================================
    ESTILOS GENERALES
    ============================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: white;
-    padding: 8px 15px;
-    max-width: 21.59cm; /* Ancho carta */
-    margin: 0 auto;
-    color: var(--color-texto);
-}
 
 /* ============================================
    ENCABEZADO ESTÁNDAR
    Incluye: Logo AGESO + Título + Código QR
    ============================================ */
 .encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-    padding-bottom: 8px;
-    border-bottom: 3px solid var(--color-primario);
-}
-
-/* Logo AGESO a la izquierda */
-.area-logo {
-    flex: 0 0 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo-ageso {
-    width: 100px;
-    height: auto;
-    margin-bottom: 5px;
-}
-
-.codigo-referencia {
-    font-size: var(--fuente-nota);
-    color: var(--color-primario);
-    font-weight: bold;
-}
-
-/* Título central */
-.titulo-principal {
-    flex: 1;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.titulo-principal h1 {
-    font-size: var(--fuente-titulo);
-    font-weight: bold;
-    color: var(--color-primario);
     margin-bottom: 3px;
-}
-
-.titulo-principal h2 {
-    font-size: var(--fuente-subtitulo);
-    font-weight: normal;
-    color: var(--color-texto);
-}
-
-/* Área de código QR/Barras a la derecha */
-.area-codigo {
-    flex: 0 0 116px;
-    border: 2px dashed #999;
-    padding: 10px;
-    text-align: center;
-    background: #fafafa;
-    border-radius: 4px;
-}
-
-.area-codigo strong {
-    display: block;
-    font-size: 10px;
-    margin-bottom: 8px;
-    color: var(--color-primario);
-    font-weight: bold;
-}
-
-.espacio-sticker {
-    height: 60px;
-    min-width: 60px;
-    background: white;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--fuente-nota);
-    color: #aaa;
-    border-radius: 2px;
-    padding: 5px;
 }
 
 /* ============================================
    SECCIÓN DE INFORMACIÓN DEL PACIENTE
    ============================================ */
 .seccion-informacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
     margin-bottom: 5px;
     font-size: var(--fuente-info);
-}
-
-.campo-info {
-    display: flex;
-    align-items: center;
-}
-
-.campo-info label {
-    font-weight: bold;
-    margin-right: 6px;
-    white-space: nowrap;
 }
 
 .campo-info input {
@@ -185,94 +46,33 @@ body {
     background: transparent;
 }
 
-/* Campo que ocupa toda la fila */
-.campo-completo {
-    grid-column: 1 / -1;
-}
 
 /* ============================================
    GUÍA DE MARCADO
    ============================================ */
-.guia-marcado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 2px solid var(--color-primario);
-    border-radius: 4px;
-    font-size: 10px;
-    font-weight: bold;
+.seccion-informacion,
+.guia-marcado,
+.instrucciones,
+.pie-pagina {
+    padding: 5px 0px;
+    margin: 3px 0px;
 }
-
-.ejemplo-marca {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* Marca correcta (círculo relleno) */
-.marca-correcta {
-    width: 16px;
-    height: 16px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    background: #000;
-}
-
-/* Marca incorrecta (X) */
-.marca-incorrecta {
-    width: 16px;
-    height: 16px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    position: relative;
-    background: white;
-}
-
-.marca-incorrecta::before,
-.marca-incorrecta::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 20px;
-    background: #000;
-    top: -2px;
-    left: 7px;
-}
-
-.marca-incorrecta::before {
-    transform: rotate(45deg);
-}
-
-.marca-incorrecta::after {
-    transform: rotate(-45deg);
-}
-
 /* ============================================
    INSTRUCCIONES
    ============================================ */
-.instrucciones {
-    background: #e8f8fd;
-    padding: 5px 12px;
-    border-radius: 6px;
-    margin-bottom: 5px;
-    border: 2px solid #1a7a3e;
-}
-
 .instrucciones h3 {
-    color: #1a7a3e;
     font-size: 10px;
-    margin-bottom: 5px;
-    font-weight: 600;
 }
 
 .instrucciones p {
-    color: black;
     font-size: 9px;
+}
+
+.instrucciones h3,
+.instrucciones p {
+    margin-left: 10px;
+    margin-right: 5px;
     margin-bottom: 5px;
-    line-height: 1.4;
 }
 
 /* ========================================
@@ -280,27 +80,19 @@ ESCALA DE MEDICIÓN (INLINE)
 ======================================== */
 .escala-inline {
     padding: 0px;
-    border-radius: 4px;
     margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 9px;
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
     gap: 5px;
-    justify-content: center;
+    border: 1px solid #ccc;
 }
 
 .escala-inline span {
-    background: #ffffff;
     padding: 4px 8px;
-    border-radius: 4px;
-    border: 1.5px solid #666;
-    white-space: nowrap;
 }
 
 .escala-inline span strong {
-    color: #000;
-    font-weight: 700;
     margin-right: 4px;
     font-size: 7px;
 }
@@ -309,27 +101,15 @@ ESCALA DE MEDICIÓN (INLINE)
    TABLA DE PREGUNTAS - ESTRUCTURA BÁSICA
    ============================================ */
 .tabla-preguntas {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin-bottom: 5px;
-    font-size: var(--fuente-pregunta);
+    margin: 5px 0px;
 }
-
 /* ============================================
    ENCABEZADO DE TABLA
    ============================================ */
-.tabla-preguntas thead {
-    background: var(--color-primario);
-    color: white;
-}
 
 .tabla-preguntas th {
     padding: 5px;
-    font-weight: bold;
     font-size: 11px;
-    text-align: center;
-    border: 1px solid var(--color-primario);
 }
 
 /* ============================================
@@ -337,52 +117,21 @@ ESCALA DE MEDICIÓN (INLINE)
    ============================================ */
 .tabla-preguntas td {
     padding: 5px;
-    border: 1px solid #888;
-    vertical-align: middle;
-}
-
-/* Filas alternadas para mejor lectura */
-.tabla-preguntas tbody tr:nth-child(even) {
-    background: var(--color-fondo-tabla);
-}
-
-/* Efecto hover para resaltar fila */
-.tabla-preguntas tbody tr:hover {
-    background: #e8f5e9;
 }
 
 /* ============================================
    COLUMNAS ESPECÍFICAS
    ============================================ */
 
-/* Columna de número de pregunta */
-.col-numero {
-    width: 40px;
-    text-align: center;
-    font-weight: bold;
-    color: var(--color-primario);
-}
-
 /* Columna de texto de ítem/pregunta */
 .col-item {
-    text-align: left;
     padding: 5px;
 }
 
 /* Columnas de respuesta (burbujas/casillas) */
 .col-respuesta {
     width: 35px;
-    text-align: center;
-    vertical-align: middle;
 }
-
-/* Para tests con más opciones (7+ opciones) */
-.col-respuesta-compacta {
-    width: 35px;
-    text-align: center;
-    vertical-align: middle;
-}
-
 /* ============================================
    VARIACIONES DE TABLA
    ============================================ */
@@ -393,81 +142,22 @@ ESCALA DE MEDICIÓN (INLINE)
     font-size: 10px;
 }
 
-/* Tabla expandida (para preguntas largas) */
-.tabla-expandida td {
-    padding: 12px;
-    line-height: 1.5;
-}
-
 /* ============================================
    BURBUJAS DE RESPUESTA
    ============================================ */
-.burbuja {
-    width: var(--tamano-burbuja);
-    height: var(--tamano-burbuja);
-    border: var(--grosor-borde-burbuja) solid var(--color-borde);
-    border-radius: 50%;
-    display: inline-block;
-    background: white;
-    vertical-align: middle;
-}
-
-/* Casilla cuadrada (alternativa a burbuja) */
-.casilla {
-    width: var(--tamano-burbuja);
-    height: var(--tamano-burbuja);
-    border: var(--grosor-borde-burbuja) solid var(--color-borde);
-    display: inline-block;
-    background: white;
-    vertical-align: middle;
-}
 
 /* ============================================
    PIE DE PÁGINA
    ============================================ */
 .pie-pagina {
-    margin-top: 5px;
-    text-align: center;
     font-size: 9px;
-    font-weight: bold;
-    padding: 5px;
-    background: var(--color-fondo-seccion);
-    border: 2px solid var(--color-primario);
-    border-radius: 4px;
-    color: var(--color-primario);
 }
 
 /* Nota OCR al final */
 .nota-ocr {
-    margin-top: 8px;
-    font-size: var(--fuente-nota);
-    color: #666;
-    text-align: center;
-    font-style: italic;
+    margin-top: 5px;
 }
 
 /* ============================================
    ESTILOS PARA IMPRESIÓN
    ============================================ */
-@media print {
-    body {
-        padding: 0;
-    }
-    
-    .area-codigo {
-        page-break-inside: avoid;
-    }
-
-    .tabla-preguntas tbody tr:nth-child(even) {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-    
-    .tabla-preguntas {
-        page-break-inside: auto;
-    }
-    
-    .tabla-preguntas tr {
-        page-break-inside: avoid;
-    }
-}
